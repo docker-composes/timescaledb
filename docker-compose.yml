@@ -1,7 +1,7 @@
-version: '2.2'
 services:
   timescaledb:
-    image: adminium/postgres:13.10
+    # Latest stable version, based on PostgreSQL 17
+    image: timescale/timescaledb:2.26.3-pg17
     container_name: timescaledb
     environment:
       - POSTGRES_USER=root
